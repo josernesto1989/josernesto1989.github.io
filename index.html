@@ -1,56 +1,380 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<meta http-equiv="Refresh" content="0;url=https://www.linkedin.com/pub/josé-ernesto-carreño-bueno/68/93b/74">
 <meta charset="utf-8" />
   <title>jecarrenob1989</title>
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" media="all" />
+  </head>
+  <body style="background-color:gray">
+  <h1>I am working in this website</h1>
+  </body>
+  </html>
+<!--
+    <link rel="stylesheet" href="css/custom.css" type="text/css" media="all" />
+    <style>
+                .share-icon {
+                    display: inline-block;
+                    float: left;
+                    margin: 4px;
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                    vertical-align: middle;
+                    background-image: url(img/share/share-icons.png);
+                }
+
+                .share-facebook {
+                    background-position: 0px 0px;
+                }
+
+                    .share-facebook:hover {
+                        background-position: 0px -40px;
+                    }
+
+        .share-twitter {
+            background-position: -40px 0px;
+        }
+
+            .share-twitter:hover {
+                background-position: -40px -40px;
+            }
+
+        .share-pinterest {
+            background-position: -80px 0px;
+        }
+
+            .share-pinterest:hover {
+                background-position: -80px -40px;
+            }
+
+                .share-linkedin {
+                    background-position: -240px 0px;
+                }
+
+                    .share-linkedin:hover {
+                        background-position: -240px -40px;
+                    }
+
+
+                .share-googleplus {
+                    background-position: -120px 0px;
+                }
+
+                    .share-googleplus:hover {
+                        background-position: -120px -40px;
+                    }
+
+
+        .share-stumbleupon {
+            background-position: -360px 0px;
+        }
+
+            .share-stumbleupon:hover {
+                background-position: -360px -40px;
+            }
+
+                .share-email {
+                    background-position: -320px 0px;
+                }
+
+                    .share-email:hover {
+                        background-position: -320px -40px;
+                    }
+            </style>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                },
+
+                $ThumbnailNavigatorOptions: {
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $AutoCenter: 0,                                 //[Optional] Auto center thumbnail items in the thumbnail navigator container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 3
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange thumbnails, default value is 1
+                    $SpacingX: 3,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $SpacingY: 3,                                   //[Optional] Vertical space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 9,                              //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 260,                          //[Optional] The offset position to park thumbnail
+                    $Orientation: 1,                                //[Optional] Orientation to arrange thumbnails, 1 horizental, 2 vertical, default value is 1
+                    $DisableDrag: false                            //[Optional] Disable drag or not, default value is false
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 980));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
 </head>
 <body>
-<section class="navbar">
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Inicio</a>
-    </div>
+   
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Proyectos<span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Facebook</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-1">
+        
+            <a class="navbar-brand" href="#">Inicio</a>
+          </div>
+          <div class="col-xs-11">
+     
+                <a class="share-icon share-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=https://josernesto1989.github.io/" title="Share on Facebook"></a>
+                <a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=https://josernesto1989.github.io/&text=C++%20Qt%20HTML5%20JavaScript%20Software%20Developer%20" title="Share on Twitter"></a>
+                <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com/share?url=https://josernesto1989.github.io/" title="Share on Google Plus"></a>
+                <a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=https://josernesto1989.github.io/" title="Share on LinkedIn"></a>
+       
+                <a class="share-icon share-email" target="_blank" href="mailto:?Subject=https://josernesto1989.github.io/&Body=Highly%20recommended%20=C++%20Qt%20HTML5%20JavaScript%20Software%20Developer%20https://josernesto1989.github.io/" title="Share by Email"></a>
+          
+              </div>
+          </div>
+          </div>
+    
+
   
-</section>
-  
-  <script src="js/bootstrap.min.js"></script>
+<section id="slider">
+    <div style="position: relative; width: 100%; background-color: #003399; overflow: hidden;">
+        <div style="position: relative; left: 50%; width: 5000px; text-align: center; margin-left: -2500px;">
+            
+            <div id="slider1_container" style="position: relative; margin: 0 auto;
+                top: 0px; left: 0px; width: 980px; height: 400px; background: url(img/major/main_bg.jpg) top center no-repeat;">
+                <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                        top: 0px; left: 0px; width: 100%; height: 100%;">
+                    </div>
+                    <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                        top: 0px; left: 0px; width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px;
+                    height: 400px; overflow: hidden;">
+                    <div>
+                        <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
+                            text-align: left; line-height: 1.8em; font-size: 12px;">
+                            
+                            <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 4em;
+                                color: #FFFFFF;">Jose Ernesto Carreno Bueno</span>
+                            <br />
+                            <span style="display: block; line-height: 1.1em; font-size: 3.5em; color: #FFFFFF;">
+                                Software Developer
+                            </span>
+                            
+                            <br />
+                            <br />
+                            <a href="http://www.jssor.com">
+                                <img src="img/major/find-out-more-bt.png" border="0" alt="auction slider" width="215"
+                                     height="50" />
+                            </a>
+                        </div>
+                        <img src="img/major/s2.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
+                        <img u="thumb" src="img/major/s2t.jpg" />
+                    </div>
+                    <div>
+                        <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
+                            text-align: left; line-height: 1.8em; font-size: 12px;">
+                            <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 52px;
+                                color: #FFFFFF;">web design & development</span>
+                            <br />
+                            <br />
+                            <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
+                                Visually Compelling & Functional
+                            </span>
+                            <br />
+                            <br />
+                            <a href="http://www.jssor.com">
+                                <img src="img/major/find-out-more-bt.png" border="0" alt="ebay slideshow" width="215"
+                                     height="50" />
+                            </a>
+                        </div>
+                        <img src="img/major/s3.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
+                        <img u="thumb" src="img/major/s3t.jpg" />
+                    </div>
+                    
+                                                        
+                    <div>
+                        <div style="position: absolute; width: 480px; height: 300px; top: 10px; left: 10px;
+                            text-align: left; line-height: 1.8em; font-size: 12px;">
+                            <span style="display: block; line-height: 1em; text-transform: uppercase; font-size: 52px;
+                                color: #FFFFFF;">mobile applications</span>
+                            <br />
+                            <span style="display: block; line-height: 1.1em; font-size: 2.5em; color: #FFFFFF;">
+                                Stay connected to your customers on the go with a MajorMedia custom mobile app.
+                                <br />
+                                <br />
+                                <a href="http://www.jssor.com">
+                                    <img src="img/major/find-out-more-bt.png" border="0" alt="ebay slider" width="215"
+                                         height="50" />
+                                </a>
+                            </span>
+                        </div>
+                        <img src="img/major/s8.png" style="position: absolute; top: 23px; left: 480px; width: 500px; height: 300px;" />
+                        <img u="thumb" src="img/major/s8t.jpg" />
+                    </div>
+                </div>
+                
+                <style>
+                    /* jssor slider arrow navigator skin 07 css */
+                    /*
+                    .jssora07l                  (normal)
+                    .jssora07r                  (normal)
+                    .jssora07l:hover            (normal mouseover)
+                    .jssora07r:hover            (normal mouseover)
+                    .jssora07l.jssora07ldn      (mousedown)
+                    .jssora07r.jssora07rdn      (mousedown)
+                    */
+                    .jssora07l, .jssora07r {
+                        display: block;
+                        position: absolute;
+                        /* size of arrow element */
+                        width: 50px;
+                        height: 50px;
+                        cursor: pointer;
+                        background: url(img/a07.png) no-repeat;
+                        overflow: hidden;
+                    }
+                    .jssora07l { background-position: -5px -35px; }
+                    .jssora07r { background-position: -65px -35px; }
+                    .jssora07l:hover { background-position: -125px -35px; }
+                    .jssora07r:hover { background-position: -185px -35px; }
+                    .jssora07l.jssora07ldn { background-position: -245px -35px; }
+                    .jssora07r.jssora07rdn { background-position: -305px -35px; }
+             
+            <style>
+                /* jssor slider thumbnail navigator skin 04 css */
+                /*
+                .jssort04 .p            (normal)
+                .jssort04 .p:hover      (normal mouseover)
+                .jssort04 .pav          (active)
+                .jssort04 .pav:hover    (active mouseover)
+                .jssort04 .pdn          (mousedown)
+                */
+
+                .jssort04 {
+                    position: absolute;
+                    /* size of thumbnail navigator container */
+                    width: 600px;
+                    height: 60px;
+                }
+
+                    .jssort04 .p {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 62px;
+                        height: 32px;
+                    }
+
+                    .jssort04 .t {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                    }
+
+                    .jssort04 .w, .jssort04 .pav:hover .w {
+                        position: absolute;
+                        width: 60px;
+                        height: 30px;
+                        border: #0099FF 1px solid;
+                        box-sizing: content-box;
+                    }
+
+                    .jssort04 .pdn .w, .jssort04 .pav .w {
+                        border-style: dashed;
+                    }
+
+                    .jssort04 .c {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 62px;
+                        height: 32px;
+                        background-color: #000;
+                        filter: alpha(opacity=45);
+                        opacity: .45;
+                        transition: opacity .6s;
+                        -moz-transition: opacity .6s;
+                        -webkit-transition: opacity .6s;
+                        -o-transition: opacity .6s;
+                    }
+
+                    .jssort04 .p:hover .c, .jssort04 .pav .c {
+                        filter: alpha(opacity=0);
+                        opacity: 0;
+                    }
+
+                    .jssort04 .p:hover .c {
+                        transition: none;
+                        -moz-transition: none;
+                        -webkit-transition: none;
+                        -o-transition: none;
+                    }
+
+                    * html .jssort04 .w {
+                        width /**/: 62px;
+                        height /**/: 32px;
+                    }
+            </style>
+            <div u="thumbnavigator" class="jssort04" style="right: 0px; bottom: 0px;">
+               
+                <div u="slides" style="bottom: 25px; right: 30px; cursor: default;">
+                    <div u="prototype" class="p">
+                        <div class=w><div u="thumbnailtemplate" class="t"></div></div>
+                        <div class=c></div>
+                    </div>
+                </div>
+              
+			  </div>
+           
+                <a style="display: none" href="http://www.jssor.com">Slider Javascript</a>
+            </div>
+           
+        </div>
+    </div>
+    </section>-->
 </body>
 </html>
